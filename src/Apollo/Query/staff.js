@@ -1,0 +1,170 @@
+import { gql } from '@apollo/client'
+
+export const QMyStaff = gql`
+query{
+  myStaff{
+    id
+    account{
+      id
+      email
+      username
+      firstName
+      lastName
+      gender
+      image      
+    }
+    writer
+    mic
+    coffie
+    coffieCoin
+    tarot
+    tarotCoin
+    katina
+    katinaCoin
+    water
+    waterCoin
+    iskambil
+    iskambilCoin
+    star
+    starCoin
+    dream
+    dreamCoin
+    online
+    bussy
+    rate
+    officeDate
+    info
+    followCount
+    totalCoin
+    commission
+    comments{
+      id
+      account{
+        email
+        firstName
+        lastName
+        gender
+        image
+      }
+      comment
+      createDate
+    }
+  }
+}
+`
+
+export const QMyStaffSub = gql`
+subscription id($id:ID!){
+  staffUpdateId(id:$id){
+    id
+    writer
+    mic
+    coffie
+    coffieCoin
+    tarot
+    tarotCoin
+    katina
+    katinaCoin
+    water
+    waterCoin
+    iskambil
+    iskambilCoin
+    star
+    starCoin
+    dream
+    dreamCoin
+    online
+    bussy
+    officeDate
+    rate
+    info
+    comments{
+      id
+      account{
+        email
+        firstName
+        lastName
+        gender
+        image
+      }
+      comment
+      createDate
+    }
+  }
+}
+`
+
+export const QPools = gql`
+query{
+  pools{
+    id
+    account{
+      id
+      username
+      email
+      firstName
+      lastName
+      image
+    }
+    status
+    info
+    type:Type{
+      name
+      icon
+    }
+    answerType
+    createDate
+  }
+}
+`
+
+export const QcreatePool = gql`
+subscription{
+  poolCreated{
+    id
+    account{
+      id
+      username
+      email
+      firstName
+      lastName
+      image
+    }
+    status
+    info
+    type:Type{
+      name
+      icon
+    }
+    answerType
+    createDate
+  }
+}
+`
+
+export const QupdatePool = gql`
+subscription{
+  poolUpdate{
+    id
+    account{
+      id
+      username
+      email
+      firstName
+      lastName
+      image
+    }
+    status
+    info
+    type:Type{
+      name
+      icon
+    }
+    answerType
+    createDate
+    to{
+      id
+    }
+  }
+}
+`

@@ -1,0 +1,21 @@
+import React from 'react';
+import { Product, Purchase, PurchaseError, Subscription } from '../types';
+declare type IAPContextType = {
+    connected: boolean;
+    products: Product[];
+    promotedProductsIOS: Product[];
+    subscriptions: Subscription[];
+    purchaseHistories: Purchase[];
+    availablePurchases: Purchase[];
+    currentPurchase?: Purchase;
+    currentPurchaseError?: PurchaseError;
+    setProducts: (products: Product[]) => void;
+    setSubscriptions: (subscriptions: Subscription[]) => void;
+    setPurchaseHistories: (purchaseHistories: Purchase[]) => void;
+    setAvailablePurchases: (availablePurchases: Purchase[]) => void;
+    setCurrentPurchase: (currentPurchase: Purchase | undefined) => void;
+    setCurrentPurchaseError: (currentPurchaseError: PurchaseError | undefined) => void;
+};
+export declare function useIAPContext(): IAPContextType;
+export declare function withIAPContext<T>(Component: React.ComponentType<T>): (props: T) => JSX.Element;
+export {};

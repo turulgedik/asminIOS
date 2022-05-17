@@ -1,0 +1,60 @@
+import { Dimensions, Platform, StyleSheet } from 'react-native'
+const { width, height } = Dimensions.get('window')
+
+export const styles = StyleSheet.create({
+    background:{
+        flex:1,
+        backgroundColor:'#f1f1f1',
+    },
+    header:{
+        width:'100%',
+        height:100,
+        position:'absolute',
+        flexDirection:'row',
+    },
+    applePayButton:{
+        width:'95%',
+        height:50,
+        backgroundColor:'#2f3640',
+        borderRadius:25,
+        flexDirection:'row',
+        paddingHorizontal:10,
+        alignItems:'center',
+    },
+    item:{
+        flexDirection:'row',
+        paddingHorizontal:10,
+        borderRadius:30,
+        borderWidth:1,
+        borderColor:'#9b59b6',
+        height:60,
+        alignItems:'center',
+        marginBottom:20
+    },
+    cartView:{
+        flex:1,
+        margin:10,
+        minHeight:width/1.7,
+        borderRadius:20,
+        borderColor:'#9b59b6',
+        borderWidth:3,
+        alignItems:'center',
+        padding:10
+    },
+    pp:{
+        width:(width/1.7)/2,
+        height:(width/1.7)/2,
+        borderRadius:(width/1.7)/4,
+        borderWidth:2,
+        borderColor:'white',
+        marginBottom:10
+    },
+    joinButton:{
+        width:75,
+        height:75,
+        borderRadius:37.5,
+        backgroundColor:'#9b59b6',
+        alignItems:'center',
+        justifyContent:'center'
+    }
+})

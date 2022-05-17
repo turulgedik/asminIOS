@@ -1,0 +1,21 @@
+import type { Product, Purchase, PurchaseError, Subscription } from '../types';
+import { requestPurchase as iapRequestPurchase, requestSubscription as iapRequestSubscription } from '../iap';
+declare type IAP_STATUS = {
+    connected: boolean;
+    products: Product[];
+    promotedProductsIOS: Product[];
+    subscriptions: Subscription[];
+    purchaseHistories: Purchase[];
+    availablePurchases: Purchase[];
+    currentPurchase?: Purchase;
+    currentPurchaseError?: PurchaseError;
+    finishTransaction: (purchase: Purchase, isConsumable?: boolean, developerPayloadAndroid?: string) => Promise<string | void>;
+    getAvailablePurchases: () => Promise<void>;
+    getPurchaseHistories: () => Promise<void>;
+    getProducts: (skus: string[]) => Promise<void>;
+    getSubscriptions: (skus: string[]) => Promise<void>;
+    requestPurchase: typeof iapRequestPurchase;
+    requestSubscription: typeof iapRequestSubscription;
+};
+export declare function useIAP(): IAP_STATUS;
+export {};

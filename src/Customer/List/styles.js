@@ -1,0 +1,57 @@
+import { Dimensions, Platform, StyleSheet } from 'react-native'
+const { width, height } = Dimensions.get('window')
+
+export const styles = StyleSheet.create({
+    background:{
+        flex:1,
+        backgroundColor:'#f1f1f1',
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    header:{
+        width:'100%',
+        height:100,
+        position:'absolute',
+        flexDirection:'row',
+    },
+    sentryView:{
+        width:'80%',
+        minHeight:150,
+        maxHeight:200,
+        borderRadius:25,
+        borderWidth:3,
+        borderColor:'#9b59b6',
+    },
+    usercardBack:{
+        borderRadius:25,
+        backgroundColor:'#9b59b6',
+        borderWidth:1,
+        borderColor:'#9b59b6',
+        marginHorizontal:10,
+        marginBottom:20
+    },
+    userCard:{
+        backgroundColor:'white',
+        borderRadius:25,
+        borderBottomRightRadius:0,
+        borderBottomLeftRadius:0,
+        padding:10,
+        flexDirection:'row'
+    },
+    textInput:{
+        width:'80%',
+        height:40,
+        borderWidth:1,
+        borderColor:'#e1e1e1',
+        backgroundColor:'#e6e5f3',
+        borderRadius:20,
+    },
+    textInputSelected:{
+        width:'80%',
+        height:40,
+        borderWidth:1,
+        borderColor:'#1e1e1e',
+        backgroundColor:'#e6e5f3',
+        borderRadius:20,
+    },
+})

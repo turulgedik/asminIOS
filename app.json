@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "asmin",
+    "slug": "asmin",
+    "version": "1.7",
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription":"Fincan fotoğrafları çekmek için kameraya erişmemiz gerekmektedir. Fal Asmin'in kameranıza erişmesine izin verin.",
+        "NSPhotoLibraryUsageDescription":"Fotoğraf yüklemek için fotoğraflarınıza erişmemiz gerekmektedir. Fal Asmin'in fotoğraflarınıza erişmesine izin verin.",
+        "NSMicrophoneUsageDescription":"Ses kayıtı göndermek için mikrofonunuza erişmemiz gerekmektedir. Fal Asmin'in mikrofonunuza erişmesine izin verin."
+      },
+      "supportsTablet": false,
+      "bundleIdentifier": "com.estanpol.asmin",
+      "buildNumber":"1.0.7",
+      "icon":"./assets/icon.png"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.estanpol.asmin",
+      "googleServicesFile": "./google-services.json"
+    }
+  },
+  "name": "asmin"
+}

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "52548129313",
+    "project_id": "falasmin",
+    "storage_bucket": "falasmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52548129313:android:760c4db44dad23f49d0960",
+        "android_client_info": {
+          "package_name": "com.estanpol.asmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52548129313-bga3766evoko08k0sipl2973ij5trihl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1IcCH9XZhGV94rkd0FJ1X64NofvaDCIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52548129313-bga3766evoko08k0sipl2973ij5trihl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "52548129313-9lg99rkr2f4vq9upp6mk8ejtgl4gt0u6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.estanpol.asmin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
